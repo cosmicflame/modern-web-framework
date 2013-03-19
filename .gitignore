@@ -1,0 +1,10 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
