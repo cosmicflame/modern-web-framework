@@ -7,7 +7,7 @@ A personal template for creating modern HTML5 single-page webapps.
 Why
 ===
 
-* I'm teaching my finance to code at the moment.  I want her to learn how to do it right,
+* I'm teaching my fiancé to code at the moment.  I want her to learn how to do it right,
 but setting up all this boilerplate is hard and annoying.  I want to give her a good starting point so she can focus
 on building something cool and shiny right now rather than having to configure require.js first.
 * I use this stuff at work all the time but have never had a go at setting it up from scratch.  I wanted to learn more...
