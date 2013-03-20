@@ -2,9 +2,13 @@ requirejs.config({
 	baseUrl: 'js',
 
 	paths: {
+		//Libs
 		'backbone': 'lib/backbone/backbone',
 		'jquery': 'lib/jquery/jquery-1.9.1',
-		'underscore': 'lib/underscore/underscore'
+		'underscore': 'lib/underscore/underscore',
+
+		//App
+		'config': 'app/config'
 	},
 
 	shim: {
@@ -24,9 +28,14 @@ requirejs.config({
 
 //Start the app
 define([
-	'jquery',
-	'underscore',
-	'backbone'
-	], function () {
-		console.log("hello I am running")
-	});
+	'config'
+	, 'app/app'
+	, 'jquery'
+	, 'underscore'
+	, 'backbone',
+], function (config, App) {
+
+	new App({
+		el: $('.page')
+	}).render();
+});
