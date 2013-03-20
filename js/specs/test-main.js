@@ -52,7 +52,6 @@ define([
 		}
 	}
 
-
 	var jasmineEnv = jasmine.getEnv()
 	setupReporters(jasmineEnv)
 
@@ -60,9 +59,6 @@ define([
 		'specs/config'
 	]
 	require(specs, function() {
-		console.log("hello")
 		jasmineEnv.execute()
-		console.log("hello")
 	})
-
 })
