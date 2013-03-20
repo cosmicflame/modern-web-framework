@@ -1,41 +1,17 @@
-requirejs.config({
-	baseUrl: 'js',
+//Load in the require.js config file
+require(['../require-config'], function() {
 
-	paths: {
-		//Libs
-		'backbone': 'lib/backbone/backbone',
-		'jquery': 'lib/jquery/jquery-1.9.1',
-		'underscore': 'lib/underscore/underscore',
+	//Start the app
+	require([
+		'config'
+		, 'app/app'
+		, 'jquery'
+		, 'underscore'
+		, 'backbone'
+	], function (config, App) {
 
-		//App
-		'config': 'app/config'
-	},
-
-	shim: {
-		'backbone': {
-			deps: [
-				'underscore'
-				, 'jquery'
-			],
-			exports: "Backbone"
-		},
-		'underscore': {
-			exports: "_"
-		}
-
-	}
-});
-
-//Start the app
-define([
-	'config'
-	, 'app/app'
-	, 'jquery'
-	, 'underscore'
-	, 'backbone'
-], function (config, App) {
-
-	new App({
-		el: $('.page')
-	}).render();
+		new App({
+			el: $('.page')
+		}).render();
+	});
 });
