@@ -32,7 +32,7 @@ define([
 	, 'app/app'
 	, 'jquery'
 	, 'underscore'
-	, 'backbone',
+	, 'backbone'
 ], function (config, App) {
 
 	new App({
