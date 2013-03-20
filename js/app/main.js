@@ -1,17 +1,24 @@
 requirejs.config({
-	baseUrl: 'js/app',
+	baseUrl: 'js',
 
 	paths: {
-		lib: '../lib',
-		'backbone': '../lib/backbone/backbone',
-		'jquery': '../lib/jquery/jquery-1.9.1',
-		'underscore': '../lib/underscore/underscore'
+		'backbone': 'lib/backbone/backbone',
+		'jquery': 'lib/jquery/jquery-1.9.1',
+		'underscore': 'lib/underscore/underscore'
 	},
 
 	shim: {
 		'backbone': {
-			deps: ['underscore']
+			deps: [
+				'underscore'
+				, 'jquery'
+			],
+			exports: "Backbone"
+		},
+		'underscore': {
+			exports: "_"
 		}
+
 	}
 });
 
@@ -20,7 +27,6 @@ define([
 	'jquery',
 	'underscore',
 	'backbone'
-	], function ($, _, bb) {
-		console.log($, _, bb)
+	], function () {
 		console.log("hello I am running")
 	});
