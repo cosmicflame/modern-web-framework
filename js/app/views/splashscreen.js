@@ -14,7 +14,7 @@ define([
 			this.$el.html(this.template({
 				name: config.app.name,
 				version: config.app.version
-			}))
+			}));
 			return this
 		}
 	})
