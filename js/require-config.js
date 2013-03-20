@@ -3,12 +3,12 @@ require.config({
 
 	paths: {
 		//Libs
-		'backbone': 'lib/backbone/backbone',
-		'jquery': 'lib/jquery/jquery-1.9.1',
-		'underscore': 'lib/underscore/underscore',
+		'backbone': 'lib/backbone/backbone'
+		, 'jquery': 'lib/jquery/jquery-1.9.1'
+		, 'underscore': 'lib/underscore/underscore'
 
 		//App
-		'config': 'app/config'
+		, 'config': 'app/config'
 	},
 
 	shim: {
@@ -22,6 +22,5 @@ require.config({
 		'underscore': {
 			exports: "_"
 		}
-
 	}
 });
