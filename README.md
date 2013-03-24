@@ -24,14 +24,19 @@ A project that will do anything useful.  If you run it you'll get a couple of ni
 
 Libraries
 =========
-* Backbone
-* jQuery
-* Require
-* Require text plugin
-* Underscore
-* Jasmine
-* Jasmine HTML Reporter
-* Sinon
+| Name                  | Version | License    | Purpose |
+|-----------------------|---------|------------|---------|
+| Backbone              | 0.9.10  | MIT        | Core    |
+| jQuery                | 1.9.1   | MIT        | Core    |
+| Require               | 2.1.5   | MIT or BSD | Core    |
+| Require text plugin   | 2.0.5+  | MIT or BSD | Core    |
+| Underscore            | 1.4.4   | MIT        | Core    |
+| Jasmine               | 1.3.1   | MIT        | Test    |
+| Jasmine HTML Reporter | 1.3.1   | MIT        | Test    |
+| Sinon                 | 1.6.0   | BSD        | Test    |
+
+* Core libraries are part of the main application.  You will need to deploy them onto your production webserver.
+* Test libraries are only used during development and do not need to be deployed into production.
 
 License
 =======
@@ -44,10 +49,7 @@ TODO
 	* Example of a Backbone model loading from the server via AJAX
 	* Example of a Jasmine test mocking the server response with Sinon
 	* Set up a Backbone router and have a couple of different dummy pages to switch between
-
-* Admin
-	* Decide on license
-	* Look up licenses of libraries in use and make sure I'm complying with them
+	* Add i18n support
 
 * Next steps
 	* Possibly move specs & specrunner into seperate dir to make exclusion for minification easier
