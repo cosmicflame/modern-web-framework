@@ -35,8 +35,7 @@ Libraries
 
 License
 =======
-I'm currently thinking of licensing this under something really permissive, e.g. BSD, MIT or WTFPL.  I will update
-this file once I've decided!
+This project is released under the MIT license.  See the LICENSE file in the project root directory for details.
 
 
 TODO
