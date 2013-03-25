@@ -5,13 +5,13 @@
  * @author Contributors: https://github.com/cjohansen/Sinon.JS/blob/master/AUTHORS
  *
  * (The BSD License)
- * 
+ *
  * Copyright (c) 2010-2013, Christian Johansen, christian@cjohansen.no
  * All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
+ *
  *     * Redistributions of source code must retain the above copyright notice,
  *       this list of conditions and the following disclaimer.
  *     * Redistributions in binary form must reproduce the above copyright notice,
@@ -20,7 +20,7 @@
  *     * Neither the name of Christian Johansen nor the names of his contributors
  *       may be used to endorse or promote products derived from this software
  *       without specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
  * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -270,7 +270,7 @@ buster.format.excludeConstructors = ["Object", /^.$/];
 buster.format.quoteStrings = true;
 
 buster.format.ascii = (function () {
-    
+
     var hasOwn = Object.prototype.hasOwnProperty;
 
     var specialObjects = [];
@@ -814,7 +814,7 @@ var sinon = (function (buster) {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -1060,7 +1060,7 @@ var sinon = (function (buster) {
     var slice = Array.prototype.slice;
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -1624,7 +1624,7 @@ var sinon = (function (buster) {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -1996,7 +1996,7 @@ var sinon = (function (buster) {
     var push = [].push;
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -2422,7 +2422,7 @@ var sinon = (function (buster) {
     var hasOwnProperty = Object.prototype.hasOwnProperty;
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -3766,7 +3766,7 @@ if (typeof module == "object" && typeof require == "function") {
  */
 
 if (typeof module == "object" && typeof require == "function") {
-    var sinon = require("../sinon");
+    var sinon = require("");
     sinon.extend(sinon, require("./util/fake_timers"));
 }
 
@@ -3893,7 +3893,7 @@ if (typeof module == "object" && typeof require == "function") {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
@@ -3966,7 +3966,7 @@ if (typeof module == "object" && typeof require == "function") {
     var commonJSModule = typeof module == "object" && typeof require == "function";
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon || !Object.prototype.hasOwnProperty) {
@@ -4065,7 +4065,7 @@ if (typeof module == "object" && typeof require == "function") {
     var assert;
 
     if (!sinon && commonJSModule) {
-        sinon = require("../sinon");
+        sinon = require("");
     }
 
     if (!sinon) {
