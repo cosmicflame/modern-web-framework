@@ -49,10 +49,30 @@ TODO
 	* Example of a Backbone model loading from the server via AJAX
 	* Example of a Jasmine test mocking the server response with Sinon
 	* Set up a Backbone router and have a couple of different dummy pages to switch between
-	* Add i18n support
 
 * Next steps
 	* Possibly move specs & specrunner into seperate dir to make exclusion for minification easier
 	* Set up r.js minifier etc for production builds
 	* Research what's in HTML5 Boilerplate that I might need - e.g. reset css, IE shim, etc
 
+
+Useful Documentation
+====================
+
+Internationalisation
+--------------------
+
+Add strings that you want to externalise to i18n/nls/bundle.js (the default i18n bundle). You can then set up
+locale-specific translations by creating extra bundle files similar to i18n/nls/en-uk/bundle.js - note that you need to
+list the locale in the default bundle at the end of the file.
+
+You can force a locale by adding the following section to require-config.js
+
+	config: {
+		i18n: {
+			locale: "en-uk"
+		}
+	}
+
+Just add that to require-config.js wholesale, just before the final `});` in the file.  You'll then see a very different
+ message in the splashscreen view!
