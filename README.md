@@ -26,14 +26,15 @@ Libraries
 =========
 | Name                  | Version | License    | Purpose |
 |-----------------------|---------|------------|---------|
-| Backbone              | 0.9.10  | MIT        | Core    |
+| Backbone.js           | 0.9.10  | MIT        | Core    |
 | jQuery                | 1.9.1   | MIT        | Core    |
-| Require               | 2.1.5   | MIT or BSD | Core    |
-| Require text plugin   | 2.0.5+  | MIT or BSD | Core    |
-| Underscore            | 1.4.4   | MIT        | Core    |
+| RequireJS             | 2.1.5   | MIT or BSD | Core    |
+| RequireJS text        | 2.0.5+  | MIT or BSD | Core    |
+| RequireJS i18n        | 2.0.2   | MIT or BSD | Core    |
+| Underscore.js         | 1.4.4   | MIT        | Core    |
 | Jasmine               | 1.3.1   | MIT        | Test    |
 | Jasmine HTML Reporter | 1.3.1   | MIT        | Test    |
-| Sinon                 | 1.6.0   | BSD        | Test    |
+| Sinon.JS              | 1.6.0   | BSD        | Test    |
 
 * Core libraries are part of the main application.  You will need to deploy them onto your production webserver.
 * Test libraries are only used during development and do not need to be deployed into production.
