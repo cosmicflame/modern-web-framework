@@ -1,5 +1,5 @@
 //Load in the require.js config file
-require(['../require-config'], function() {
+require(['require-config'], function() {
 
 	//Start the app
 	require([
