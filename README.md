@@ -47,7 +47,6 @@ This project is released under the MIT license.  See the LICENSE file in the pro
 TODO
 ====
 * Coding
-	* Example of a Backbone model loading from the server via AJAX
 	* Example of a Jasmine test mocking the server response with Sinon
 	* Set up a Backbone router and have a couple of different dummy pages to switch between
 * Next steps
