@@ -1,0 +1,11 @@
+{
+	"guitars": {
+		"gibson": ["Les Paul", "SG"]
+		, "fender": ["Stratocaster", "Telecaster"]
+	}
+	, "amps": {
+		"vox": ["ac30", "ac15", "Night Train"]
+		, "fender": ["Supersonic", "Twin Reverb"]
+		, "marshall": ["Class 5"]
+	}
+}
