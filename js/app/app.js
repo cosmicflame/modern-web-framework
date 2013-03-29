@@ -1,4 +1,4 @@
-define([
+; define([
 	'app/views/splashscreen'
 	, 'app/views/ajaxloader'
 ], function(Splashscreen, AjaxLoader) {

@@ -1,4 +1,4 @@
-require.config({
+; require.config({
 	paths: {
 		//Libs
 		'backbone': 'lib/backbone/backbone'

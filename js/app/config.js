@@ -1,4 +1,4 @@
-define([], function () {
+; define([], function () {
 	return {
 		"app": {
 			"name": "Brian's awesome HTML5 app",
