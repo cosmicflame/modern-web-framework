@@ -1,5 +1,5 @@
 //Load main require.js config file
-require(['../js/require-config'], function() {
+; require(['../js/require-config'], function() {
 
 	//Load testing require.js config file
 	require(['../test/require-test-config'], function() {
