@@ -6,11 +6,11 @@
 	, 'app/views/ajaxloader'
 	, "text!templates/navigation.html"
 	, 'i18n!i18n/nls/bundle'
-], function(Backbone, _, Router, Splashscreen, AjaxLoader, template, i18n) {
+], function(Backbone, _, Router, Splashscreen, AjaxLoader, navigationTemplate, i18n) {
 
 	return Backbone.View.extend({
 
-		template: _.template(template),
+		template: _.template(navigationTemplate),
 
 		initialize: function() {
 
