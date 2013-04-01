@@ -29,9 +29,6 @@
 				this.$el.append(page.render().$el)
 				page.$el.hide()
 			}, this))
-
-			this.router = new Router(this.pages)
-			Backbone.history.start()
 		}
 	})
 });

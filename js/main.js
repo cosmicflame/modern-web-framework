@@ -5,13 +5,16 @@
 	require([
 		'config'
 		, 'app/app'
-		, 'jquery'
-		, 'underscore'
+		, 'app/router'
 		, 'backbone'
-	], function (config, App) {
+		, 'jquery'
+	], function (config, App, Router, Backbone, $) {
 
-		new App({
+		var app = new App({
 			el: $('.page')
-		}).render()
+		})
+		app.render()
+		new Router(app.pages)
+		Backbone.history.start()
 	})
 });
