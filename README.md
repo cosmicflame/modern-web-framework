@@ -48,7 +48,6 @@ TODO
 ====
 * Coding
 	* Example of a Jasmine test mocking the server response with Sinon
-	* Set up a Backbone router and have a couple of different dummy pages to switch between
 * Next steps
 	* Set up r.js minifier etc for production builds
 	* Research what's in HTML5 Boilerplate that I might need - e.g. reset css, IE shim, etc
