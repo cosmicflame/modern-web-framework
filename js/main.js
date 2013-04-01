@@ -14,7 +14,12 @@
 			el: $('.page')
 		})
 		app.render()
-		new Router(app.pages)
+		this.router = new Router(app.pages)
 		Backbone.history.start()
+
+		//If we're not on a page yet, default to the Splashscreen page
+		if (!this.router.currentPage) {
+			this.router.navigate('page/splashscreen', {trigger: true})
+		}
 	})
 });
