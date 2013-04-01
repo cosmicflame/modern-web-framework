@@ -17,9 +17,6 @@
 				"splashscreen": new Splashscreen(),
 				"ajaxloader": new AjaxLoader()
 			}
-
-			this.router = new Router(this.pages)
-			Backbone.history.start()
 		},
 
 		render: function() {
@@ -33,7 +30,8 @@
 				page.$el.hide()
 			}, this))
 
-			this.router.navigate("page/splashscreen", {trigger: true})
+			this.router = new Router(this.pages)
+			Backbone.history.start()
 		}
 	})
 });
