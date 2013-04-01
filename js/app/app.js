@@ -1,11 +1,16 @@
 ; define([
-	'app/views/splashscreen'
+	"backbone"
+	, 'app/router'
+	, 'app/views/splashscreen'
 	, 'app/views/ajaxloader'
-], function(Splashscreen, AjaxLoader) {
+], function(Backbone, Router, Splashscreen, AjaxLoader) {
 
 	return Backbone.View.extend({
 
 		initialize: function() {
+			this.router = new Router()
+			Backbone.history.start()
+
 			this.splashscreen = new Splashscreen()
 			this.ajaxloader = new AjaxLoader()
 		},
