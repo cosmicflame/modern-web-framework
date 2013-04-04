@@ -8,6 +8,7 @@
 		, 'app/router'
 		, 'backbone'
 		, 'jquery'
+		, 'bootstrap'
 	], function (config, App, Router, Backbone, $) {
 
 		this.app = new App({

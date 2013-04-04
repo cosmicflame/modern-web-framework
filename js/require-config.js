@@ -4,6 +4,7 @@
 		'backbone': 'lib/backbone/backbone'
 		, 'jquery': 'lib/jquery/jquery-1.9.1'
 		, 'underscore': 'lib/underscore/underscore'
+		, 'bootstrap': 'lib/bootstrap/bootstrap'
 
 		//App
 		, 'config': 'app/config'
