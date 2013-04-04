@@ -1,12 +1,13 @@
 ; define([
 	"backbone"
 	, "underscore"
+	, 'config'
 	, 'app/router'
 	, 'app/views/splashscreen'
 	, 'app/views/ajaxloader'
 	, "text!templates/navigation.html"
 	, 'i18n!i18n/nls/bundle'
-], function(Backbone, _, Router, Splashscreen, AjaxLoader, navigationTemplate, i18n) {
+], function(Backbone, _, config, Router, Splashscreen, AjaxLoader, navigationTemplate, i18n) {
 
 	return Backbone.View.extend({
 
@@ -25,7 +26,8 @@
 
 			//Render navigation template
 			this.$el.html(this.template({
-				i18n: i18n
+				  i18n: i18n
+				, config: config
 			}))
 
 			//Render each child page
