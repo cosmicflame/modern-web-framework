@@ -21,5 +21,10 @@
 		'underscore': {
 			exports: "_"
 		}
+		, 'boostrap': {
+			deps: [
+				'jquery'
+			]
+		}
 	}
 });
