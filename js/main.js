@@ -6,16 +6,24 @@
 		'config'
 		, 'app/app'
 		, 'app/router'
+		, 'app/views/navigation'
 		, 'backbone'
 		, 'jquery'
 		, 'bootstrap'
-	], function (config, App, Router, Backbone, $) {
+	], function (config, App, Router, Navigation, Backbone, $) {
 
+		//Create navbar
+		this.navigation = new Navigation({
+			el: $('.navigation')
+		}).render()
+
+		//Create main app
 		this.app = new App({
-			el: $('.page')
-		})
-		this.app.render()
-		this.router = new Router(this.app.pages)
+			el: $('.container')
+		}).render()
+
+		//Create router
+		this.router = new Router(this.app.pages, this.navigation)
 		Backbone.history.start()
 
 		//If we're not on a page yet, default to the Splashscreen page

@@ -3,8 +3,9 @@ define([
 ], function(Backbone) {
 	return Backbone.Router.extend({
 
-		initialize: function(pages) {
+		initialize: function(pages, navigation) {
 			this.pages = pages
+			this.navigation = navigation
 		},
 
 		routes: {
@@ -19,6 +20,8 @@ define([
 				}
 				this.currentPage = page
 				page.$el.show()
+
+				this.navigation.selectPage(pageName)
 			}
 		}
 	})
