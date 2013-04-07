@@ -21,7 +21,7 @@
 		'underscore': {
 			exports: "_"
 		}
-		, 'boostrap': {
+		, 'bootstrap': {
 			deps: [
 				'jquery'
 			]
