@@ -5,6 +5,7 @@
 		, 'jquery': 'lib/jquery/jquery-1.9.1'
 		, 'underscore': 'lib/underscore/underscore'
 		, 'bootstrap': 'lib/bootstrap/bootstrap'
+		, 'pubsub': 'lib/pubsub/pubsub'
 
 		//App
 		, 'config': 'app/config'
