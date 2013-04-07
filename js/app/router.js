@@ -1,11 +1,11 @@
 define([
 	'backbone'
-], function(Backbone) {
+	, 'pubsub'
+], function(Backbone, pubsub) {
 	return Backbone.Router.extend({
 
-		initialize: function(pages, navigation) {
+		initialize: function(pages) {
 			this.pages = pages
-			this.navigation = navigation
 		},
 
 		routes: {
@@ -21,7 +21,7 @@ define([
 				this.currentPage = page
 				page.$el.show()
 
-				this.navigation.selectPage(pageName)
+				pubsub.pub('navigate:page', pageName)
 			}
 		}
 	})

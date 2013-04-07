@@ -1,10 +1,11 @@
 ; define([
 	"backbone"
 	, "underscore"
+	, 'pubsub'
 	, "text!templates/navigation.html"
 	, 'config'
 	, 'i18n!i18n/nls/bundle'
-], function(Backbone, _, template, config, i18n) {
+], function(Backbone, _, pubsub, template, config, i18n) {
 
 	return Backbone.View.extend({
 
@@ -12,6 +13,7 @@
 
 		initialize: function() {
 			_.bindAll(this, 'selectPage')
+			pubsub.sub('navigate:page', this.selectPage)
 		},
 
 		render: function() {

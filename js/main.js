@@ -23,7 +23,7 @@
 		}).render()
 
 		//Create router
-		this.router = new Router(this.app.pages, this.navigation)
+		this.router = new Router(this.app.pages)
 		Backbone.history.start()
 
 		//If we're not on a page yet, default to the Splashscreen page
