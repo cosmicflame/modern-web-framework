@@ -8,6 +8,7 @@
 		, "navigation": "Navigation"
 		, "pages.splashscreen": "Splashscreen"
 		, "pages.ajaxloader": "Ajax Loader Example"
+		, "pages.quine": "Example of a Quine"
 	},
 	"en-uk": true
 });

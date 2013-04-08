@@ -4,7 +4,8 @@
 	, 'app/router'
 	, 'app/views/splashscreen'
 	, 'app/views/ajaxloader'
-], function(Backbone, _, Router, Splashscreen, AjaxLoader) {
+	, 'app/views/quine'
+], function(Backbone, _, Router, Splashscreen, AjaxLoader, Quine) {
 
 	return Backbone.View.extend({
 
@@ -13,7 +14,8 @@
 			//Create all child pages
 			this.pages = {
 				"splashscreen": new Splashscreen(),
-				"ajaxloader": new AjaxLoader()
+				"ajaxloader": new AjaxLoader(),
+				"quine": new Quine()
 			}
 		},
 
