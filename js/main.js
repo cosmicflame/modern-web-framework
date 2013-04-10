@@ -12,15 +12,15 @@
 		, 'bootstrap'
 	], function (config, App, Router, Navigation, Backbone, $) {
 
-		//Create navbar
-		this.navigation = new Navigation({
-			el: $('.navigation')
-		}).render()
-
 		//Create main app
 		this.app = new App({
 			el: $('.app')
 		}).render()
+
+		//Create navbar
+		this.navigation = new Navigation({
+			el: $('.navigation')
+		}, {pages: this.app.pages}).render()
 
 		//Create router
 		this.router = new Router(this.app.pages)

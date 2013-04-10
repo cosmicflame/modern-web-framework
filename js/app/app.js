@@ -12,18 +12,33 @@
 		initialize: function() {
 
 			//Create all child pages
-			this.pages = {
-				"splashscreen": new Splashscreen(),
-				"ajaxloader": new AjaxLoader(),
-				"quine": new Quine()
-			}
+			this.pages = [
+				{
+					view: new Splashscreen()
+					, route: "splashscreen"
+					, icon: 'icon-home'
+					, label: 'pages.splashscreen'
+				},
+				{
+					view: new AjaxLoader()
+					, route: 'ajaxloader'
+					, icon: 'icon-cog'
+					, label: 'pages.ajaxloader'
+				},
+				{
+					view: new Quine()
+					, route: 'quine'
+					, icon: 'icon-refresh'
+					, label: 'pages.quine'
+				}
+			]
 		},
 
 		render: function() {
 			//Render each child page
 			_.each(this.pages, _.bind(function(page) {
-				this.$el.append(page.render().$el)
-				page.$el.hide()
+				this.$el.append(page.view.render().$el)
+				page.view.$el.hide()
 			}, this))
 			return this
 		}

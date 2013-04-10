@@ -1,7 +1,8 @@
 define([
 	'backbone'
 	, 'pubsub'
-], function(Backbone, pubsub) {
+	, 'underscore'
+], function(Backbone, pubsub, _) {
 	return Backbone.Router.extend({
 
 		initialize: function(pages) {
@@ -13,13 +14,16 @@ define([
 		},
 
 		navigateToPage: function(pageName) {
-			var page = this.pages[pageName]
+			var page = _.find(this.pages, function(page) {
+				return page.route === pageName
+			})
+
 			if (page) {
 				if (this.currentPage) {
-					this.currentPage.$el.hide()
+					this.currentPage.view.$el.hide()
 				}
 				this.currentPage = page
-				page.$el.show()
+				page.view.$el.show()
 
 				pubsub.pub('navigate:page', pageName)
 			}
